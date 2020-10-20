@@ -19,4 +19,4 @@ In particular in the last year I fell in love with climbing! :D
 
 ### Contact me
 
-[email@domain.com](mailto:donati.andrea.00@google.com)
+[donati.andrea.00@google.com](mailto:donati.andrea.00@google.com)
