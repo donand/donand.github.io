@@ -1,11 +1,11 @@
 ---
 layout: post
-title: My Work at Translated
+title: My Research on Text to Speech
 ---
 
 Hello everyone,
 
-I am writing this post to show some results of the work I'm doing at Translated. Translated is a translation company based in Rome, Italy.<br>
+I am writing this post to show some results of the work I'm doing at [Translated](https://translated.com/). Translated is a translation company based in Rome, Italy.<br>
 
 Here I'm working on Text to Speech. I'm doing applied research and the goal is to generate very natural speech in different laguages, with the ability to control the style of the generated speech.<br>
 The concept of style of speech is not easy to define, it's the combination of a lot of different aspects like prosody, emphasis, speaking rate, pitch, etc.<br>
@@ -20,13 +20,13 @@ The best results are in Italian for now, but I'm working hard to achieve the sam
 Here there are some videos dubbed with artificial voices.<br>
 If you cannot play the videos and the audio, please visit this page with Google Chrome.
 
-<iframe style="text-align:center; width:100%;" src="https://drive.google.com/file/d/1ZfV51EMJFmJkP1brQeVpDZapqou6iRCz/preview" width="480" height="360"></iframe>
+<iframe src="https://drive.google.com/file/d/1ZfV51EMJFmJkP1brQeVpDZapqou6iRCz/preview" width="480" height="360"></iframe>
 
-<iframe style="text-align:center; width:100%;" src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview" width="480" height="360"></iframe>
+<iframe src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview" width="480" height="360"></iframe>
 
 But these voices can also speak with different styles: they can talk normally, they can whisper, they can even shout! Or maybe they can tell a story like a book or a documentary!
 
-<iframe style="text-align:center; width:100%;" src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview" height="80"></iframe>
+<iframe src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview" height="80"></iframe>
 
 
 # The Models
@@ -39,6 +39,16 @@ For the style, I am using an additional audio encoder, the Style Encoder, that g
 The reference audio is used to define the style that we want to generate at inference time, and it's usually a sample chosen from the dataset.
 
 I tried a lot of different models with different final quality, training complexity, speed, and in the end I came up with the following selection:
-- Tacotron 2 [1] as the Synthesizer
-- WaveRNN [2] as the Vocoder
-- Global Style Tokens [3] as the Style Encoder
+- Tacotron 2 *[1]* as the Synthesizer
+- WaveRNN *[2]* as the Vocoder
+- Global Style Tokens *[3]* as the Style Encoder
+
+
+<br>
+
+------
+
+
+[1] [Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions](https://arxiv.org/pdf/1712.05884.pdf)<br>
+[2] [Efficient Neural Audio Synthesis](https://arxiv.org/pdf/1802.08435.pdf)<br>
+[3] [Style Tokens: Unsupervised Style Modeling, Control and Transfer in End-to-End Speech Synthesis](https://arxiv.org/pdf/1803.09017.pdf)
