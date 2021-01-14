@@ -24,18 +24,21 @@ If you cannot play the videos and the audio, please visit this page with Google 
 
 <iframe style="text-align:center; width:100%;" src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview" width="480" height="360"></iframe>
 
-But these voices can also speak with different style, they can talk normally, they can whisper, they can even shout! Or maybe they can tell a story like a book or a documentary!
+But these voices can also speak with different styles: they can talk normally, they can whisper, they can even shout! Or maybe they can tell a story like a book or a documentary!
 
 <iframe style="text-align:center; width:100%;" src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview" height="80"></iframe>
 
 
 # The Models
-In 2020 some end-to-end models for TTS stated showing up, but they are still in a developing phase, and they are not as mature as the old cascade setting. So TTS is made of two models, the first that is the synthesizer that generates mel spectrograms from text, and the second one is the vocoder, that generates the final waveform from the spectrograms.<br>
-The spectrogram is a compressed and lossy representation of the audio in the frequency domain, and this is needed in order to make the task easier for the synthesizer.
+In 2020 some end-to-end models for TTS started showing up, but they are still in a developing phase, and they are not as mature as the old cascade setting.<br>
+For this reason, I use a TTS system made of two models, the first is the synthesizer, that generates mel spectrograms from text, and the second one is the vocoder, that generates the final waveform from the spectrograms.<br>
+The spectrogram is a compressed and lossy representation of the audio in the frequency domain. The use of a more compact representation of the audio instead of the raw waveform, is useful in order to make the task easier for the synthesizer, because it generates an output with roughly 500 or 1000 timesteps instead of the 200k timesteps of a waveform.<br>
+But of course this comes at the cost of using a lossy representation of the audio, and the effort to get back the information and reconstruct the final waveform is left to the Vocoder.
 
-I am also using an additional audio encoder (Style Encoder) that generates a style vector from a reference audio, and this vector is passed to the synthesizer in order to apply the desired style to the generated speech.
+For the style, I am using an additional audio encoder, the Style Encoder, that generates a style vector from a reference audio, and this vector is passed to the synthesizer in order to apply the desired style to the generated speech.<br>
+The reference audio is used to define the style that we want to generate at inference time, and it's usually a sample chosen from the dataset.
 
-I tried a lot of different models with different resulting quality, but in the end I came up with the following selection:
+I tried a lot of different models with different final quality, training complexity, speed, and in the end I came up with the following selection:
 - Tacotron 2 [1] as the Synthesizer
 - WaveRNN [2] as the Vocoder
 - Global Style Tokens [3] as the Style Encoder
