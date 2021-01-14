@@ -20,9 +20,9 @@ The best results are in Italian for now, but I'm working hard to achieve the sam
 Here there are some videos dubbed with artificial voices.<br>
 If you cannot play the videos and the audio, please visit this page with Google Chrome.
 
-<iframe style="text-align: center; width: 100%; margin-top: 20px" src="https://drive.google.com/file/d/1ZfV51EMJFmJkP1brQeVpDZapqou6iRCz/preview" width="480" height="360"></iframe>
+<iframe style="text-align: center; width: 100%; margin-top: 20px;" src="https://drive.google.com/file/d/1ZfV51EMJFmJkP1brQeVpDZapqou6iRCz/preview" width="480" height="360"></iframe>
 
-<iframe style="text-align: center; width: 100%; margin-top: 20px" src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview" width="480" height="360"></iframe>
+<iframe style="text-align: center; width: 100%; margin-top: 20px;" src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview" width="480" height="360"></iframe>
 
 But these voices can also speak with different styles: they can talk normally, they can whisper, they can even shout! Or maybe they can tell a story like a book or a documentary!
 
@@ -31,7 +31,7 @@ But these voices can also speak with different styles: they can talk normally, t
 
 # The Models
 In 2020 some end-to-end models for TTS started showing up, but they are still in a developing phase, and they are not as mature as the old cascade setting.<br>
-For this reason, I use a TTS system made of two models, the first is the synthesizer, that generates mel spectrograms from text, and the second one is the vocoder, that generates the final waveform from the spectrograms.<br>
+For this reason, I use a TTS system made of two models, the first one is the synthesizer, that generates mel spectrograms from text, and the second one is the vocoder, that generates the final waveform from the spectrograms.<br>
 The spectrogram is a compressed and lossy representation of the audio in the frequency domain. The use of a more compact representation of the audio instead of the raw waveform, is useful in order to make the task easier for the synthesizer, because it generates an output with roughly 500 or 1000 timesteps instead of the 200k timesteps of a waveform.<br>
 But of course this comes at the cost of using a lossy representation of the audio, and the effort to get back the information and reconstruct the final waveform is left to the Vocoder.
 
