@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Research on Text to Speech
+title: My Work on Text to Speech
 ---
 
 Hello everyone,
