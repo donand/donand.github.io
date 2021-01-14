@@ -18,12 +18,7 @@ The best results are in Italian for now, but I'm working hard to achieve the sam
 
 Here there are some videos dubbed with the artificial voices:
 
-<iframe src="https://drive.google.com/file/d/1pPNHyZlRPtYs-nWCFUM0LCbqPeKmcVr9/view?usp=sharing" 
-    width="560" 
-    height="315"
-    frameborder="0" 
-    allowfullscreen>
-</iframe>
+<iframe src="https://drive.google.com/file/d/1pPNHyZlRPtYs-nWCFUM0LCbqPeKmcVr9/preview" width="640" height="480"></iframe>
 
 
 # The Models
