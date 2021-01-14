@@ -20,15 +20,13 @@ Here there are some videos dubbed with artificial voices:
 
 <iframe style="text-align:center; width:100%;" src="https://drive.google.com/file/d/1ZfV51EMJFmJkP1brQeVpDZapqou6iRCz/preview" width="480" height="360"></iframe>
 
-<iframe src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview" width="480" height="360"></iframe>
-
-<iframe src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview" width="100%"></iframe>
-
-<iframe src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview"></iframe>
+<iframe style="text-align:center; width:100%;" src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview" width="480" height="360"></iframe>
 
 But these voices can also speak with different style, they can talk normally, they can whisper, they can even shout! Or maybe they can tell a story like a book or a documentary!
 
-<audio ref='styleDemo' src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview" autoPlay loop></audio>
+<iframe style="text-align:center; width:50%;" src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview" width="640" height="480"></iframe>
+
+<audio src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview"></audio>
 
 # The Models
 In 2020 some end-to-end models for TTS stated showing up, but they are still in a developing phase, and they are not as mature as the old cascade setting. So TTS is made of two models, the first that is the synthesizer that generates mel spectrograms from text, and the second one is the vocoder, that generates the final waveform from the spectrograms.<br>
