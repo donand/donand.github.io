@@ -24,7 +24,7 @@ Here there are some videos dubbed with artificial voices:
 
 But these voices can also speak with different style, they can talk normally, they can whisper, they can even shout! Or maybe they can tell a story like a book or a documentary!
 
-<iframe style="text-align:center; width:50%;" src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview" width="640" height="480"></iframe>
+<iframe style="text-align:center; width:100%;" src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview" height="50"></iframe>
 
 <audio src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview"></audio>
 
