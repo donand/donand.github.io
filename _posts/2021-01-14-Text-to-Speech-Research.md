@@ -20,13 +20,13 @@ The best results are in Italian for now, but I'm working hard to achieve the sam
 Here there are some videos dubbed with artificial voices.<br>
 If you cannot play the videos and the audio, please visit this page with Google Chrome.
 
-<iframe src="https://drive.google.com/file/d/1ZfV51EMJFmJkP1brQeVpDZapqou6iRCz/preview" width="480" height="360"></iframe>
+<iframe style="text-align: center; width: 100%; margin-top: 20px" src="https://drive.google.com/file/d/1ZfV51EMJFmJkP1brQeVpDZapqou6iRCz/preview" width="480" height="360"></iframe>
 
-<iframe src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview" width="480" height="360"></iframe>
+<iframe style="text-align: center; width: 100%; margin-top: 20px" src="https://drive.google.com/file/d/1hwbfuc23T4OxlHZSu0LQBbb21AZX34Ar/preview" width="480" height="360"></iframe>
 
 But these voices can also speak with different styles: they can talk normally, they can whisper, they can even shout! Or maybe they can tell a story like a book or a documentary!
 
-<iframe src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview" height="80"></iframe>
+<iframe style="text-align: center; width: 100%;" src="https://drive.google.com/file/d/1yX1pBunJRZ3xTDGlRmAtZuJDqzFSys1m/preview" height="80"></iframe>
 
 
 # The Models
