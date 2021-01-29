@@ -42,7 +42,7 @@ For the style, I am using an additional audio encoder, the Style Encoder, that g
 The reference audio is used to define the style that we want to generate at inference time, and it's usually a sample chosen from the dataset.
 
 I tried a lot of different models with different final quality, training complexity, speed, and in the end I came up with the following selection:
-- Tacotron 2 *[1]* as the Synthesizer
+- Tacotron 2<!--more--><sup>[^ttron]</sup> as the Synthesizer
 - WaveRNN *[2]* as the Vocoder
 - Global Style Tokens *[3]* as the Style Encoder
 
@@ -51,7 +51,7 @@ I tried a lot of different models with different final quality, training complex
 
 ------
 
-
-[1] [Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions](https://arxiv.org/pdf/1712.05884.pdf)<br>
+# Bibliography
+[^ttron] [Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions](https://arxiv.org/pdf/1712.05884.pdf)<br>
 [2] [Efficient Neural Audio Synthesis](https://arxiv.org/pdf/1802.08435.pdf)<br>
 [3] [Style Tokens: Unsupervised Style Modeling, Control and Transfer in End-to-End Speech Synthesis](https://arxiv.org/pdf/1803.09017.pdf)
